@@ -1,7 +1,6 @@
 * {
 	margin:0;
 	padding:0;
-	font-family: "HaxrCorpttf";
 }
  
  body {
@@ -16,7 +15,7 @@ background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, F
 }
 
 header {
-	margin-top:10px;
+	margin-top: 10px;
     width: 100%;
     overflow: hidden;
     height: 150px;
@@ -26,62 +25,64 @@ header {
  /* MARGEN BARRAS */
  
 nav {
-    top:-20px;
+    top: -20px;
     position: absolute;
-    left:0;
-    right:0;
-	margin:20px auto;
-	max-width:1000px;
-	width:50%;
+    left: 0;
+    right: 0;
+	margin: 20px auto;
+	max-width: 1000px;
+	width: 50%;
 }
  
   /* TAMAÑO BARRAS */
   
 nav > ul {
-	display:table;
-	width:100%;
-	background:#80FFFFFF;
-	position:relative;
+	display: table;
+	width: 100%;
+	background: #80FFFFFF;
+	position: relative;
 }
 
  /* POSICION BARRAS */
  
 nav > ul li {
-	display:table-cell;
+	display: table-cell;
 }
  
 /* TEXTO */
  
  nav > ul li a {
-	color:#fff;
-	display:block;
-	line-height:20px;
-	padding:35px;
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 35px;
 	position: relative;
-	text-align:center;
-	text-decoration:none;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
  
  /* BARRAS */
  
 nav > ul > li > a span {
-	background:#174459;
-	display:block;
-	height:100%;
-	width:100%;
-	left:0;
+	background: #174459;
+	display: block;
+	height: 100%;
+	width: 100%;
+	left: 0;
 	position:absolute;
-	top:-55px;
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
+	top: -55px;
+	
+	/*TIEMPO DE ANIMACION DE LAS BARRAS*/
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
 }
 
   /* ANIMACION */
@@ -93,9 +94,13 @@ nav > ul > li > a:hover > span {
 /* COLORES */
 
 nav ul li a .primero {
-	background:#3b5998;
+	background: #3b5998;
 }
  
 nav ul li a .segundo {
-	background:#00aced;
+	background: #00aced;
+}
+
+nav ul li a .tercero {
+	background: #cc181e 
 }
