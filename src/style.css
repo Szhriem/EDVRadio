@@ -1,20 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
-
-* {
-	margin:0;
-	padding:0;
-}
- 
- body {
-background: #134E5E; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #134E5E , #71B280); /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #134E5E , #71B280); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        
-   	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
 
 header {
 	margin-top: 0px;
@@ -23,6 +6,14 @@ header {
     height: 150px;
     position: relative;
 }
+
+/** MARGEN GENERAL **/
+
+* {
+	margin:0;
+	padding:0;
+}
+
  
  /* MARGEN BARRAS */
  
@@ -107,8 +98,3 @@ nav ul li a .segundo {
 nav ul li a .tercero {
 	background: #cc181e 
 }
-
-p {
-  font-family: "Pacifico", sans-serif;
-  font-size: 150%;
-} 

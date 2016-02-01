@@ -6,10 +6,65 @@
 	<link rel="stylesheet" href="style.css"> 
 	<link rel="stylesheet" href="iconstyle.css">
 	<base target="_blank"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
 
+<!-- GENERADOR DE GRADIENTS -->
+
+<script>
+function newGradient() {
+  var c1 = {
+    r: Math.floor(Math.random()*255),
+    g: Math.floor(Math.random()*255),
+    b: Math.floor(Math.random()*255)
+  };
+  var c2 = {
+    r: Math.floor(Math.random()*255),
+    g: Math.floor(Math.random()*255),
+    b: Math.floor(Math.random()*255)
+  };
+  c1.rgb = 'rgb('+c1.r+','+c1.g+','+c1.b+')';
+  c2.rgb = 'rgb('+c2.r+','+c2.g+','+c2.b+')';
+  return 'radial-gradient(at top left, '+c1.rgb+', '+c2.rgb+')';
+}
+
+function rollBg() {
+  $('.bg.hidden').css('background', newGradient());
+  $('.bg').toggleClass('hidden');
+}
+
+$(document).ready(function() {
+  rollBg();
+  setInterval(rollBg, 5000);
+});
+</script>
+
+<!-- CSS GENERADOR DE GRADIENTS -->
+<style>
+html,
+body {
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 5s;
+  -moz-transition: opacity 5s;
+  transition: opacity 5s;
+}
+
+.hidden { opacity: 0; }
+</style>
 <body>
-<header>
+	
+ <div class="bg"></div>
+ <div class="bg hidden"></div>
+
+	<header>
 		<nav>
 			<ul>
 	<li><a href="https://www.facebook.com/eclosiondevocesradio">
@@ -30,7 +85,7 @@
 		</nav>
 </header>
 
-<p style="font 550% Pacifico-woff2-local; text-align: center; color: #fff"> Eclosion de Voces Radio </p>
-
+<p style="font 550% Pacifico-woff2-local; text-align: center; color: #fff;"> Eclosión de Voces Radio </p>
+</div>
 </body>
 </html>
