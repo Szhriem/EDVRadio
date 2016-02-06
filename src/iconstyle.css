@@ -58,7 +58,7 @@
         url("fonts/Pacifico.svg#Pacifico-Regular") format("svg");
 }
 
-	p {
+	h1 {
   font-family: "Pacifico";
   font-size: 550%;
   text-shadow: 2px 2px 4px #000000;

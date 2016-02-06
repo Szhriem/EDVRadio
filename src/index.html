@@ -7,10 +7,8 @@
 	<link rel="stylesheet" href="iconstyle.css">
 	<base target="_blank"> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-</head>
 
-<!-- GENERADOR DE GRADIENTS -->
-
+  <!-- SCRIPT RGRADIENTS -->
 <script>
 function newGradient() {
   var c1 = {
@@ -39,7 +37,7 @@ $(document).ready(function() {
 });
 </script>
 
-<!-- CSS GENERADOR DE GRADIENTS -->
+<!-- CSS RGRADIENTS -->
 <style>
 html,
 body {
@@ -58,41 +56,46 @@ body {
 }
 
 .hidden { opacity: 0; }
+
+#rep {
+    display: table;
+    margin: 0 auto;
+}
 </style>
+
+</head>
 
 <body>
 
  <div class="bg"></div>
  <div class="bg hidden"></div>
-
  
 	<header>
 		<nav>
 			<ul>
 	<li><a href="https://www.facebook.com/eclosiondevocesradio">
 		<span class="primero">
-		<i aria-hidden="true" data-icon="&#xe902;" class="icon-facebook"></i></span></a>
+		<i data-icon="&#xe902;" class="icon-facebook"></i></span></a>
 	</li>
 
 	<li><a href="https://twitter.com/edvradio">
 		<span class="segundo">
-		<i aria-hidden="true" data-icon="&#xe905;" class="icon-twitter"></i></span></a>
+		<i data-icon="&#xe905;" class="icon-twitter"></i></span></a>
 	</li>
 	
 	<li><a href="https://www.youtube.com/user/EclosionDeVocesTV">
 		<span class="tercero">
-		<i aria-hidden="true" data-icon="&#xe906;" class="icon-youtube"></i></span></a>
+		<i data-icon="&#xe906;" class="icon-youtube"></i></span></a>
 	</li>		
 			</ul>
 		</nav>
-</header>
+  </header>
 
-<p style="font 550% Pacifico-woff-local; text-align: center; color: #fff; position: relative"> Eclosión de Voces Radio </p>
+<h1 style="font 550% Pacifico-woff-local; text-align: center; color: #fff; position: relative"> Eclosión de Voces Radio </h1>
 
-<center>
-<audio style"position:relative" controls autoplay src="http://streaming3.globalhost.net.ve:9346/;">
-</audio>
-</center>
+<div id="rep">
+  <embed width='420' height='50' pluginspage='http://www.macromedia.com/go/getflashplayer' src='http://www.globalhost.com.ve/shoutcast/reproductor6.swf?s=2&p=46' play='true' loop='true' type='application/x-shockwave-flash' menu='true' title='Streaming HD By GLOBALHOST'>
+</div>
 
 </body>
 </html>
